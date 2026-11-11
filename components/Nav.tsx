@@ -34,7 +34,7 @@ export default function Nav({ session, signOutAction }: NavProps) {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-5 md:px-10 py-3 shadow-sm sticky top-0 z-50 bg-eletric-red-900/90 backdrop-blur-md border-b border-black/10">
+    <nav className="flex items-center justify-between px-5 md:px-10 py-3 shadow-sm sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/10">
       <Link href="/" className="flex items-center gap-1 z-50">
         <Image
           src="/favicon.ico"
@@ -149,12 +149,12 @@ export default function Nav({ session, signOutAction }: NavProps) {
                 </div>
               ) : (
                 <div className="flex flex-col gap-4 text-white w-full">
-                  <Link href="/signin" onClick={() => setNavOpen(false)}>
+                  <Link href="/sign-in" onClick={() => setNavOpen(false)}>
                     <button className="bg-black py-3 px-8 rounded-sm w-full">
                       Sign In
                     </button>
                   </Link>
-                  <Link href="/get-started" onClick={() => setNavOpen(false)}>
+                  <Link href="/sign-in" onClick={() => setNavOpen(false)}>
                     <button className="bg-black py-3 px-8 rounded-sm w-full">
                       Get Started
                     </button>

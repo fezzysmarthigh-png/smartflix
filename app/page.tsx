@@ -268,7 +268,7 @@ export default function LandingPage() {
               placeholder="Enter your email address"
               className="bg-black/60 border border-white/20 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-red-600 flex-1 text-white placeholder-gray-500"
             />
-            <Link href="/get-started">
+            <Link href="/sign-in">
               <button
                 style={{ backgroundColor: Theme.secondary }}
                 className="w-full sm:w-auto text-white font-bold px-6 py-3 rounded-md hover:opacity-90 transition-all cursor-pointer whitespace-nowrap"

@@ -3,22 +3,17 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { auth, signIn } from "@/auth";
 import { FcGoogle } from "react-icons/fc";
-import { 
-  FiArrowLeft, 
-  FiShield, 
-  FiMail, 
-  FiLock, 
-  FiUser, 
+import {
+  FiArrowLeft,
+  FiShield,
+  FiMail,
+  FiLock,
+  FiUser,
   FiArrowRight,
   FiCheckCircle,
-  FiTv
 } from "react-icons/fi";
 import { FaFilm } from "react-icons/fa";
-
-export const Theme = {
-  primary: "#0B0E14",
-  secondary: "#E50914",
-};
+import { Theme } from "@/components/Theme";
 
 export default async function SignUpPage(): Promise<React.JSX.Element> {
   const session = await auth();
@@ -103,7 +98,7 @@ export default async function SignUpPage(): Promise<React.JSX.Element> {
         </div>
 
         <form
-          action={async (formData: FormData) => {
+          action={async () => {
             "use server";
             redirect("/sign-in");
           }}
@@ -186,9 +181,9 @@ export default async function SignUpPage(): Promise<React.JSX.Element> {
 
         <p className="text-[11px] text-center text-gray-500 leading-tight">
           By registering, you accept SMARTFLIX's{" "}
-          <Link href="/settings" className="underline hover:text-gray-300">Terms of Service</Link>{" "}
+          <Link href="/Settings" className="underline hover:text-gray-300">Terms of Service</Link>{" "}
           and{" "}
-          <Link href="/settings" className="underline hover:text-gray-300">Privacy Policy</Link>.
+          <Link href="/Settings" className="underline hover:text-gray-300">Privacy Policy</Link>.
         </p>
 
       </div>

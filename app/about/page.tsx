@@ -167,14 +167,14 @@ export default function AboutPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/sign-up"
+              href="/sign-in"
               style={{ backgroundColor: Theme.secondary }}
               className="w-full sm:w-auto px-8 py-3.5 rounded-full font-bold text-sm text-white hover:opacity-90 transition-all shadow-lg cursor-pointer"
             >
               Get Started Free
             </Link>
             <Link
-              href="/search"
+              href="/Search"
               className="w-full sm:w-auto px-8 py-3.5 rounded-full font-bold text-sm bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer border border-white/10"
             >
               Browse Search Room
