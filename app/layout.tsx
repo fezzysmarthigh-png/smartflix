@@ -32,7 +32,8 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      {/* suppressHydrationWarning: browser extensions (e.g. Grammarly) inject attributes on <body> */}
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         
         <Nav session={session} signOutAction={signOutAction} />
         {children}
